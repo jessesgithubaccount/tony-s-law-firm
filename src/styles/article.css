@@ -50,3 +50,25 @@
   .article-page .btn.sq:hover,
   .article-page .btn.sq:focus-visible{ transform:none; }
 }
+
+/* Mobile */
+.article-page{ overflow-wrap:break-word; }
+@media (max-width:640px){
+  .article-page .top{ padding:16px 20px 0; }
+  .article-page article{ padding:24px 20px 16px; }
+  .article-page h1{ font-size:clamp(25px,7.4vw,30px); margin-bottom:24px; }
+  .article-page h2{ font-size:23px; margin:40px 0 12px; }
+  .article-page h3{ font-size:18px; margin:28px 0 10px; }
+  .article-page p,
+  .article-page li{ line-height:1.75; }
+  .article-page ul{ padding-left:20px; }
+  .article-page .ask{ padding:8px 20px 0; }
+  .article-page .ask .btn{ width:100%; text-align:center; padding:16px 22px; }
+  .article-page .nav{ padding:16px 20px calc(48px + env(safe-area-inset-bottom,0px)); }
+  .article-page .pn{ width:100%; justify-content:space-between; gap:16px; }
+  .article-page .tl{ padding:12px 0; }
+}
+@media (hover:none){
+  .article-page .btn:hover,
+  .article-page .btn.sq:hover{ transform:none; box-shadow:none; }
+}
